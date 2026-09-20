@@ -63,24 +63,402 @@
     </ol>
     <br />
     <h2>categories</h2>
-    <br>
-  <h2>Web Development</h2>
-  <ul>
-    <h2>Frontend</h2>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>Javascript</li>
-  </ul>
-<ul>
- <h2>Backend</h2>
-  <li>Node.js</li>
-  <li>APIs</li>
-  <li>Databases</li>
-</ul>
+    <br />
+    <h2>Web Development</h2>
+    <ul>
+      <h2>Frontend</h2>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+    </ul>
+    <ul>
+      <h2>Backend</h2>
+      <li>Node.js</li>
+      <li>APIs</li>
+      <li>Databases</li>
+    </ul>
+    <h2>Important HTMl Terms</h2>
+    <dh>HTML</dh>
+    <dd>HyperText Markup Language</dd>
+    <dh>Element</dh>
+    <dd>
+      A complete HTML structure consisting of a start tag, content, and an end
+      tag.
+    </dd>
+    <dh>Attribute</dh>
+    <dd>
+      Additional information about an element that is added to the start tag.
+    </dd>
+    <dh>Semantic</dh>
+    <dd>HTML text that describes the meaning and structure of the content.</dd>
+    <hr />
+    <h2>My Projects</h2>
+    <hr />
+    <h2>Project 1</h2>
+    <h3>project image here by img tag</h3>
+    <h2>Personal portfolio</h2>
+    <h3>A portfolio website creating using HTML</h3>
+    <button>View Project</button>
+    <hr />
+    <h2>Project 2</h2>
+    <h2>Java Project</h2>
+    <h3>A simple management System created for practice</h3>
+    <button>View Project</button>
+    <hr />
+    <h2>External Resources</h2>
+    <a type="url" href="www.github.com"> GitHub</a> <br />
+    <a type="url" href="www.google.com">Google</a> <br />
+    <a type="email" href="INFT251103050@kfueit.edu.pk">Email Me</a> <br />
+    ```html
+    <!-- ================= EDUCATION ================= -->
 
+    <section id="education">
+      <h2>🎓 EDUCATION</h2>
+      <hr />
 
+      <table border="1">
+        <caption>
+          <strong>Education / Course Record</strong>
+        </caption>
 
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Institute</th>
+            <th>Year</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
 
+        <tbody>
+          <tr>
+            <td>BS Information Systems</td>
+            <td>KFUEIT</td>
+            <td>2026</td>
+            <td>Ongoing</td>
+          </tr>
 
+          <tr>
+            <td>ICS</td>
+            <td>PGC</td>
+            <td>2025</td>
+            <td>Completed</td>
+          </tr>
+
+          <tr>
+            <td colspan="4">
+              <strong>Academic Information</strong>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+      <h2>📩 CONTACT ME</h2>
+      <hr />
+
+      <form>
+        <!-- Personal Information -->
+        <fieldset>
+          <legend><strong>Personal Information</strong></legend>
+
+          <label for="name">Name:</label>
+          <br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+
+          <br /><br />
+
+          <label for="email">Email:</label>
+          <br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <br /><br />
+
+          <label for="password">Password:</label>
+          <br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+            required
+          />
+
+          <br /><br />
+
+          <label for="age">Age:</label>
+          <br />
+          <input type="number" id="age" name="age" placeholder="Enter age" />
+
+          <br /><br />
+
+          <label for="dob">Date of Birth:</label>
+          <br />
+          <input type="date" id="dob" name="dob" />
+
+          <br /><br />
+
+          <label for="phone">Phone:</label>
+          <br />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter phone number"
+          />
+        </fieldset>
+
+        <br />
+
+        <!-- Preferences -->
+        <fieldset>
+          <legend><strong>Preferences</strong></legend>
+
+          <label>Gender:</label>
+          <br />
+
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+
+          <br /><br />
+
+          <label>Skills:</label>
+          <br />
+
+          <input type="checkbox" id="html" name="skills" value="html" />
+          <label for="html">HTML</label>
+
+          <br />
+
+          <input type="checkbox" id="css" name="skills" value="css" />
+          <label for="css">CSS</label>
+
+          <br />
+
+          <input
+            type="checkbox"
+            id="javascript"
+            name="skills"
+            value="javascript"
+          />
+          <label for="javascript">JavaScript</label>
+
+          <br />
+
+          <input type="checkbox" id="java" name="skills" value="java" />
+          <label for="java">Java</label>
+
+          <br /><br />
+
+          <label for="city">City:</label>
+          <br />
+
+          <select id="city" name="city">
+            <option value="">Select City</option>
+
+            <optgroup label="Punjab">
+              <option value="rahim-yar-khan">Rahim Yar Khan</option>
+
+              <option value="lahore">Lahore</option>
+
+              <option value="multan">Multan</option>
+            </optgroup>
+
+            <optgroup label="Other">
+              <option value="islamabad">Islamabad</option>
+
+              <option value="karachi">Karachi</option>
+            </optgroup>
+          </select>
+
+          <br /><br />
+
+          <label for="technology"> Favorite Technology: </label>
+          <br />
+
+          <input
+            type="text"
+            id="technology"
+            name="technology"
+            list="technologies"
+            placeholder="Choose or type"
+          />
+
+          <datalist id="technologies">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="JavaScript"></option>
+            <option value="Java"></option>
+            <option value="Python"></option>
+            <option value="Node.js"></option>
+          </datalist>
+
+          <br /><br />
+
+          <label for="cv">Upload CV:</label>
+          <br />
+
+          <input type="file" id="cv" name="cv" />
+        </fieldset>
+
+        <br />
+
+        <!-- Message -->
+        <fieldset>
+          <legend><strong>Message</strong></legend>
+
+          <label for="subject">Subject:</label>
+          <br />
+
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Enter subject"
+          />
+
+          <br /><br />
+
+          <label for="message">Message:</label>
+          <br />
+
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            cols="50"
+            placeholder="Write your message..."
+          ></textarea>
+
+          <br /><br />
+
+          <input type="submit" value="Submit" />
+
+          <input type="reset" value="Reset" />
+        </fieldset>
+      </form>
+    </section>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- ================= MEDIA ================= -->
+
+    <section id="media">
+      <h2>🎵 MEDIA</h2>
+      <hr />
+
+      <h3>Audio</h3>
+
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg" />
+        Your browser does not support audio.
+      </audio>
+
+      <br /><br />
+
+      <h3>Video</h3>
+
+      <video controls width="500">
+        <source src="video.mp4" type="video/mp4" />
+        Your browser does not support video.
+      </video>
+
+      <br /><br />
+
+      <h3>YouTube Video</h3>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/VIDEO_ID"
+        title="YouTube video"
+        allowfullscreen
+      >
+      </iframe>
+    </section>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- ================= ASIDE ================= -->
+
+    <aside>
+      <h2>📌 QUICK INFORMATION</h2>
+      <hr />
+
+      <ul>
+        <li>Currently learning HTML</li>
+        <li>Practicing Java</li>
+        <li>Learning DSA</li>
+        <li>Working on Full Stack roadmap</li>
+      </ul>
+
+      <h3>Useful Links</h3>
+
+      <ul>
+        <li>
+          <a href="https://github.com" target="_blank"> GitHub </a>
+        </li>
+
+        <li>
+          <a href="https://linkedin.com" target="_blank"> LinkedIn </a>
+        </li>
+
+        <li>
+          <a href="https://youtube.com" target="_blank"> YouTube </a>
+        </li>
+      </ul>
+    </aside>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <p>© 2026 Awais — All Rights Reserved</p>
+
+      <p>
+        <a href="https://github.com" target="_blank">GitHub</a>
+        |
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        |
+        <a href="mailto:example@gmail.com">Email</a>
+        |
+        <a href="tel:+923000000000">Phone</a>
+      </p>
+
+      <small>Made with HTML</small>
+    </footer>
+    ```
   </body>
 </html>
