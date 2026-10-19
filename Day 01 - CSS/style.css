@@ -1,6 +1,7 @@
 *{
   padding:1px;
   margin:1px;
+   font-family: Arial, sans-serif;
 }
 
 h1 {
@@ -8,4 +9,34 @@ h1 {
   font: size 30px;;
 }
 
+ h2 {
+  color:rgb(212, 12, 212);
+ }
+
+.intro{
+color:rgb(16, 170, 16);
+}
+
+#special{
+  color:red;
+}
+
+/* Grouping selectors
+__________________________
+h1, h2, p {
+    color: blue;
+}
+ */
+
+ /* 
+ Even if they are direct child or nested.
+
+div p {
+    color: green;
+} */
  
+/* 
+direct child ko target  
+div > p {
+    color: red;
+} */
