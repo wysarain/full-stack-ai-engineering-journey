@@ -1,34 +1,277 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Final Revision</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Heading ONE</h1>
-
-    <!--  linking CSS with the HTML 
-      <!DOCTYPE html>
-<html>
 <head>
-    <title>CSS Practice</title>
+    <!-- Basic page settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopSmart - Online Store</title>
+
+    <!-- Connect external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>My Website</h1>
+
+    <!-- NAVBAR: Flexbox layout -->
+    <header class="site-header">
+        <nav class="navbar container">
+            <a class="logo" href="#">Shop<span>Smart</span></a>
+
+            <form class="search-form">
+                <input type="search" placeholder="Search products..." aria-label="Search products">
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="nav-links">
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#products">Cart (0)</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION: Flexbox and positioning -->
+        <section class="hero container" id="about">
+            <div class="hero-content">
+                <p class="eyebrow">YOUR EVERYDAY SHOP</p>
+                <h1>Find your next <span>favorite thing.</span></h1>
+
+                <p class="hero-description">
+                    Explore technology, accessories, and useful everyday products.
+                </p>
+
+                <a class="button button-primary" href="#products">
+                    Explore Products
+                </a>
+            </div>
+
+            <!-- Decorative illustration made with CSS -->
+            <div class="hero-art">
+                <div class="art-circle"></div>
+
+                <div class="art-card">
+                    <span class="art-icon">✦</span>
+                    <p>Good finds.</p>
+                    <strong>Great everyday value.</strong>
+                </div>
+
+                <span class="art-badge">NEW</span>
+            </div>
+        </section>
+
+        <!-- CATEGORY SECTION: CSS Grid -->
+        <section class="section container">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">BROWSE</p>
+                    <h2>Shop by Category</h2>
+                </div>
+            </div>
+
+            <div class="category-grid">
+                <a class="category-card" href="#products">
+                    <span class="category-icon">⌨</span>
+                    <span>Technology</span>
+                </a>
+
+                <a class="category-card" href="#products">
+                    <span class="category-icon">◉</span>
+                    <span>Accessories</span>
+                </a>
+
+                <a class="category-card" href="#products">
+                    <span class="category-icon">▣</span>
+                    <span>Home Essentials</span>
+                </a>
+
+                <a class="category-card" href="#products">
+                    <span class="category-icon">✧</span>
+                    <span>Daily Picks</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- PRODUCTS SECTION: Grid, cards and reusable classes -->
+        <section class="section container" id="products">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">HAND-PICKED FOR YOU</p>
+                    <h2>Popular Products</h2>
+                </div>
+            </div>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+                    <div class="product-visual visual-blue">
+                        <span class="product-label">POPULAR</span>
+                        <div class="product-emoji">🎧</div>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Technology</p>
+                        <h3>Wireless Headphones</h3>
+                        <p class="product-description">
+                            Comfortable sound for everyday use.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong class="price">Rs. 2,499</strong>
+                            <button class="button button-small" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-visual visual-peach">
+                        <span class="product-label">NEW</span>
+                        <div class="product-emoji">⌚</div>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Accessories</p>
+                        <h3>Smart Watch</h3>
+                        <p class="product-description">
+                            A clean look for your daily routine.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong class="price">Rs. 3,799</strong>
+                            <button class="button button-small" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-visual visual-green">
+                        <span class="product-label">VALUE PICK</span>
+                        <div class="product-emoji">🔊</div>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Technology</p>
+                        <h3>Portable Speaker</h3>
+                        <p class="product-description">
+                            Small size, ready for your playlist.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong class="price">Rs. 1,899</strong>
+                            <button class="button button-small" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-visual visual-lilac">
+                        <span class="product-label">EVERYDAY</span>
+                        <div class="product-emoji">🎒</div>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="product-category">Daily Picks</p>
+                        <h3>Everyday Backpack</h3>
+                        <p class="product-description">
+                            Room for your study essentials.
+                        </p>
+
+                        <div class="product-bottom">
+                            <strong class="price">Rs. 2,199</strong>
+                            <button class="button button-small" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- PROMO SECTION: Flexbox -->
+        <section class="promo container">
+            <div>
+                <p class="eyebrow">STUDENT-FRIENDLY DESIGN</p>
+                <h2>Good Design Starts with the Basics.</h2>
+                <p>Practice CSS by exploring this shopping website.</p>
+            </div>
+
+            <a class="button button-light" href="#contact">
+                Contact Us
+            </a>
+        </section>
+
+        <!-- CONTACT FORM: Inputs, labels and focus states -->
+        <section class="section container contact-section" id="contact">
+            <div class="contact-copy">
+                <p class="eyebrow">GET IN TOUCH</p>
+                <h2>Have a Question?</h2>
+                <p>
+                    Send us a message using the sample form.
+                    This form is for frontend practice only.
+                </p>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="full-name">Your Name</label>
+                        <input
+                            id="full-name"
+                            name="name"
+                            type="text"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="Write your message..."
+                    ></textarea>
+                </div>
+
+                <button class="button button-primary" type="submit">
+                    Send Message
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner container">
+            <a class="logo footer-logo" href="#">
+                Shop<span>Smart</span>
+            </a>
+
+            <p>HTML and CSS Revision Project</p>
+            <a class="back-to-top" href="#">Back to Top ↑</a>
+        </div>
+    </footer>
+
 </body>
-</html> -->
- <h2> My page</h2>
- <p class="intro"> Welcome to my website </p>
-<p id="special"> This is a special Paragraph </p>
-  
-<!--  chatgpt chat Background images Paused -->
-
-
-
-
-
-  </body>
 </html>
