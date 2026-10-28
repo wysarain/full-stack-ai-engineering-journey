@@ -5,7 +5,8 @@
 }
 
 body{
-  background-color: grey;
+  background-image: url("back.jpeg");
+  background-size: cover;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -18,20 +19,27 @@ body{
   background-color:white;
   gap:20px;
   width:320px;
+  height:400px;
   justify-content:center;
   align-items:center;
+  border-radius:30px;
+  border:2px solid rgb(241, 4, 4);
 }
 
 
 h2{
-  margin: 20px;
+  margin-bottom: 40px;
   text-align:center;
   justify-content:center;
+  color:rgb(100, 13, 13);
 }
 
 .input input{
   display:block;
-  margin-top:10px;
-  padding: 20px;
-  width:100%;
+  margin-top:9px;
+  padding: 10px;
+  width:230px;
+}
+input::placeholder{
+  color:rgb(100, 13, 13);
 }
