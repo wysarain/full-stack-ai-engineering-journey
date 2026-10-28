@@ -6,36 +6,48 @@
     <meta name="description" content="Login form with CSS" />
     <title>Login Form with the CSS</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Making the login form -->
-     <div  class="form">
-    <div class="input">
-      <h2>Login Here</h2>
-      <input 
-        type="text"
-        id="username"
-        placeholder="Enter you username"
-        required
-        maxlength="30"
-      />
-      <input
-        type="password"
-        id="password"
-        placeholder="Enter your Password"
-        required
-        minlength="8"
-      />
+    <div class="form">
+      <div class="input">
+        <h2>Login Here</h2>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter you username"
+          required
+          maxlength="30"
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your Password"
+          required
+          minlength="8"
+        />
+      </div>
+      <div>
+        <button type="submit" class="login-button">Login</button>
+        <p class="login-with">Login with</p>
+      </div>
+      <div>
+        <button type="button" class="social social0">
+          <i class="fa-brands fa-google"></i> Google
+        </button>
+        <button type="button" class="social social0">
+          <i class="fa-brands fa-facebook"></i> Facebook
+        </button>
+      </div>
+      <div>
+        <p class="not-member">
+          Not a member? <a href="signup.html"> Sign up here </a>
+        </p>
+      </div>
     </div>
-    <div>
-      <button type="submit" class="login-button">login</button>
-      <p class="login-with">Login with</p>
-      <button type="button">Google</button>
-      <button type="button">Facebook</button>
-    </div>
-    <div>
-      <p>Not a member? <a href="signup.html"> Sign up here </a></p>
-    </div>
-     </div>
   </body>
 </html>
