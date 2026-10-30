@@ -5,6 +5,7 @@ let name = "Awais Afzal";
 let city = "Ryk";
 let age = 20;
 let isStudent = true;
+// variables topic revising 
 
 // Output
 console.log(name);
