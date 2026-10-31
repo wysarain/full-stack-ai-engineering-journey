@@ -46,6 +46,8 @@ console.log(y);
 let bigint = 1234567890123456789012345678901234567890n;
 console.log(bigint);
 
+//Bigint used for long integer data.
+
 // Symbol
 let id = Symbol("id");
 console.log(id);
