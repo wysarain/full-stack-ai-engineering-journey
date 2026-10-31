@@ -58,3 +58,5 @@ console.log(typeof x);           // undefined
 console.log(typeof y);           // object (JS ka famous bug)
 console.log(typeof bigint);      // bigint
 console.log(typeof id);          // symbol
+
+//Revised Data types 
