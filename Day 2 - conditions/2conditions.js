@@ -61,7 +61,7 @@ if (num ==0){
 } else {
   console.log("Number is Negative");
 }
-
+// learn the Different Conditional senses in js
 let a1 , b1 , c1 ;
 a1 = 5;
 b1 = 10;
