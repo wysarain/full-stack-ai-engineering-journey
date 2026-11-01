@@ -77,7 +77,7 @@ else {  console.log("c1 is the largest number");
 } 
 
 // is leap year 
-
+// leap year program
 let year = 2006;
 
 if ( year %400 == 0){
