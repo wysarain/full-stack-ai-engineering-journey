@@ -1,0 +1,36 @@
+System Fundamentals
+
+Memory-Bound vs Compute-Bound
+
+1. Memory-Bound:
+A task is memory-bound when its performance mainly depends on how quickly data can be transferred from RAM, VRAM, or storage.
+
+2. Compute-Bound:
+A task is compute-bound when its performance mainly depends on CPU or GPU processing power and calculations.
+
+3. Model Loading Time:
+To calculate model loading time, divide the model size by the disk read speed.
+
+Formula:
+Loading Time = Model Size / Disk Speed
+
+Example:
+Model Size = 14 GB
+Disk Speed = 500 MB/s
+
+14,000 / 500 = 28 seconds
+
+So, the estimated loading time is 28 seconds.
+
+7 Billion FP16 Parameters:
+
+- Total Parameters = 7 Billion
+- FP16 = 2 Bytes per Parameter
+
+Calculation:
+7,000,000,000 × 2 = 14,000,000,000 Bytes
+
+Final Answer:
+7 Billion FP16 parameters require approximately 14 GB of storage.
+
+Note: Actual loading time can be higher due to additional overhead and data transfer between storage, RAM, and VRAM.
