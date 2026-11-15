@@ -1,1 +1,10 @@
 Linux basics day 2
+
+topics :  Commands
+ls 
+pwd
+cd
+mkdir
+ls
+touch 
+cp
